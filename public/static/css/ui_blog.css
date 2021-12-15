@@ -1,0 +1,32 @@
+.Addbtn {
+    background-color: #5c0c91;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.headings {
+    color: #fff;
+    height: 20vh;
+}
+
+.sub_heading {
+    position: relative;
+}
+
+.cardposition {
+    position: absolute;
+    top: 39%;
+    left: 9%;
+}
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+}

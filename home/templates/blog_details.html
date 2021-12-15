@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block start %}
+<div class="container">
+    <div class="card">
+        <h4 class="card-header">Read Your Blog</h4>
+        <div class="row text-center">
+            <div class="col-xl-10 mx-auto mt-3">
+                <img src="/media/{{blog_obj.image}}" class="img-fluid mb-5" alt="" height="290" width="290">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-10 mx-auto">
+                <div class="card-body">
+                    <h1 class="card-text">{{blog_obj.title}}</h1>
+                    <div class="fb-like" data-href="http://127.0.0.1:8000/blog-details/{{blog_obj.id}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                </div>
+                <div class="text-content">
+                    {{blog_obj.content|safe}}
+                    <div class="fb-comments mt-4" data-href="http://127.0.0.1:8000/blog-details/{{blog_obj.id}}" data-width="" data-numposts="1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
